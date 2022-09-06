@@ -79,11 +79,7 @@ body {
     background: #FFFFFF;
 }
 
-
-.fi {
-    color: blue;
-}
-
-.fi2 {
-    color: blue;
+.icon i {
+    font-size: 1rem;
+    
 }
