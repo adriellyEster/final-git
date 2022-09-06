@@ -29,6 +29,19 @@ body {
 .corpo {
     margin: 57px;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.corpo .list {
+    padding-left:5rem;
+}
+
+.container-comands {
+    margin: 2.5rem 0px;
+}
 
 .let {
     color: blue;

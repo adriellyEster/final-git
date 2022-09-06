@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Historia do GIT</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -19,41 +19,62 @@
 
 <body>
     <div class="corpo">
-        <div>
+        <div class="container">
             <h1>HISTÓRIA DO GIT</h1>
             <p>Como muitas coisas na vida, o Git começou com um pouco de destruição e uma ardente controvérsia.</p>
-            <p>O núcleo (kernel) do Linux é um projeto de código aberto com um escopo bastante grande. A maior parte da manutenção do núcleo do Linux1991-2002), as mudanças no código eram compartilhadas como parte da vida e arquivos. Em 20, o projeto do
+            <p>
+                O núcleo (kernel) do Linux é um projeto de código aberto com um escopo bastante grande. A maior parte da
+                manutenção do núcleo do Linux1991-2002), as mudanças no código eram compartilhadas como parte da vida e
+                arquivos. Em 20, o projeto do
                 Linux começou a usar um DVCS núcleo chamado02 do BitKeeper.</p>
-            <p>Em 2005, a relação entre a comunidade que desenvolveu o núcleo do Linux e a empresa que desenvolveu o BitKeeper travado em peças, a ferramenta passou a pagar. Isto alertou a comunidade que desenvolvia o Linux (e especialmente o Linux Torvalds,
-                o criador do Linux) a desenvolver sua própria ferramenta baseada em lições aprendidas ao usar o BitKeeper. Algumas metas do novo sistema era os seguintes:</p>
-            <li>Velocidade</li>
-            <li>Projeto simples</li>
-            <li>Forte suporte para desenvolvimento não-linear (milhares de ramos paralelos)</li>
-            <li>Completamente distribuído</li>
-            <li>
-                Capaz de lidar com grandes projetos como o núcleo o Linux com eficiência (velocidade e tamanho dos dados)
-            </li>
-            <p>Desde seu nascimento em 2005, Git evoluiu e cresceu para ser fácil de usar e ainda reter essas qualidades iniciais. Ele é incrivelmente rápido, é muito eficiente com projetos grandes, e ele tem um incrível sistema de ramos para desenvolvimento
+            <p>
+                Em 2005, a relação entre a comunidade que desenvolveu o núcleo do Linux e a empresa que desenvolveu o
+                BitKeeper travado em peças, a ferramenta passou a pagar. Isto alertou a comunidade que desenvolvia o
+                Linux (e especialmente o Linux Torvalds,
+                o criador do Linux) a desenvolver sua própria ferramenta baseada em lições aprendidas ao usar o
+                BitKeeper. Algumas metas do novo sistema era os seguintes:
+            </p>
+            <ul class="list">
+                <li>Velocidade</li>
+                <li>Projeto simples</li>
+                <li>Forte suporte para desenvolvimento não-linear (milhares de ramos paralelos)</li>
+                <li>Completamente distribuído</li>
+                <li>
+                    Capaz de lidar com grandes projetos como o núcleo o Linux com eficiência (velocidade e tamanho dos
+                    dados)
+                </li>
+            </ul>
+            <p>Desde seu nascimento em 2005, Git evoluiu e cresceu para ser fácil de usar e ainda reter essas qualidades
+                iniciais. Ele é incrivelmente rápido, é muito eficiente com projetos grandes, e ele tem um incrível
+                sistema de ramos para desenvolvimento
                 não linear
             </p>
         </div>
-        <div>
+
+        <div class="container-comands">
             <h1>PRINCIPAIS COMANDOS DO GIT</h1>
             <h2>Comandos GIT</h2>
             <h2>git config</h2>
-            <p>Um dos comandos git mais usados ​​é o git config que pode ser usado para definir valores de configuração específicos do usuário como e-mail, algoritmo preferido para diff, nome de usuário e formato de arquivo etc. Por exemplo, o seguinte comando
+            <p>Um dos comandos git mais usados ​​é o git config que pode ser usado para definir valores de configuração
+                específicos do usuário como e-mail, algoritmo preferido para diff, nome de usuário e formato de arquivo
+                etc. Por exemplo, o seguinte comando
                 pode ser usado para definir o email:</p>
             <h2 class="let">Exemplo:</h2>
             <h3>
                 $ git config –global user.name “Seu nome” $ git config –global user.email “Seu email”</h3>
             <h2>2. git init</h2>
-            <p>Esse é o comando que você irá utilizar para criar um novo projeto de git. O comando irá criar um repositório novo em branco e, a partir daí, será possível armazenar seu código fonte, alterar, salvaguardar alterações etc.</p>
+            <p>Esse é o comando que você irá utilizar para criar um novo projeto de git. O comando irá criar um
+                repositório novo em branco e, a partir daí, será possível armazenar seu código fonte, alterar,
+                salvaguardar alterações etc.</p>
             <h2 class="let">Exemplo:</h2>
-            <h3>$ git init - Se você já possui um repositório anterior ou deseja criar um repositório com um nome em específico, você pode passar o nome como parâmetro do comando: $ git init
+            <h3>$ git init - Se você já possui um repositório anterior ou deseja criar um repositório com um nome em
+                específico, você pode passar o nome como parâmetro do comando: $ git init
                 <O nome do seu repositório>
             </h3 class="let">
             <h2>3. git clone</h2>
-            <p>Esse comando Git cria uma cópia exata de um repositório já existente. Então… quando usar git init e quando usar git clone? O git clone é mais avançado, uma vez que ele mesmo executa um comando git init internamente. Além disso, ele verifica
+            <p>Esse comando Git cria uma cópia exata de um repositório já existente. Então… quando usar git init e
+                quando usar git clone? O git clone é mais avançado, uma vez que ele mesmo executa um comando git init
+                internamente. Além disso, ele verifica
                 todo o conteúdo do projeto.
             </p>
             <h3 class="let">Exemplo:</h3>
@@ -61,30 +82,39 @@
                 <URL do seu projeto></URL>
             </h2>
             <h2>4. git add</h2>
-            <p>Esse comando Git adiciona os arquivos especificados de código ao seu repositório, sejam arquivos novos ou arquivos anteriores que foram alterados. Oferece diferentes possibilidades de sintaxe.
+            <p>Esse comando Git adiciona os arquivos especificados de código ao seu repositório, sejam arquivos novos ou
+                arquivos anteriores que foram alterados. Oferece diferentes possibilidades de sintaxe.
             </p>
             <h3 class="let">Exemplo:</h3>
-            <h2>$ git add seu_arquivo - (esse comando irá adicionar o arquivo em específico ao repositório) $ git add * - (esse comando irá adicionar todos os arquivos novos e/ou modificados ao repositório)</h2>
+            <h2>$ git add seu_arquivo - (esse comando irá adicionar o arquivo em específico ao repositório) $ git add *
+                - (esse comando irá adicionar todos os arquivos novos e/ou modificados ao repositório)</h2>
             <h2>5. git commit</h2>
             <p>
                 <li>
-                    git add adiciona seus arquivos modificados à fila para serem submetidos a um commit posteriormente. Os arquivos não passaram por um commit.
+                    git add adiciona seus arquivos modificados à fila para serem submetidos a um commit posteriormente.
+                    Os arquivos não passaram por um commit.
                 </li>
                 <li>
-                    O git commit executa o commit dos arquivos que foram adicionados e cria uma nova revisão com um log. Por outro lado, se você não adicionar nenhum arquivo, o git não fará o commit de nada. É possível combinar as duas ações em um único comando: $ git commit
+                    O git commit executa o commit dos arquivos que foram adicionados e cria uma nova revisão com um log.
+                    Por outro lado, se você não adicionar nenhum arquivo, o git não fará o commit de nada. É possível
+                    combinar as duas ações em um único comando: $ git commit
                     -a.
                 </li>
             </p>
             <h3 class="let">Exemplo:</h3>
             <h2>$ git commit -m “seu comentário”</h2>
             <h2>6. git branch</h2>
-            <p>É comum na maior parte do tempo possuir múltiplas variações em seu repositório Git, chamadas de branches (“ramificações”). A grosso modo, um branch é um caminho independente de desenvolvimento, uma alternativa. A princípio pode parecer fácil
-                se perder em diversos caminhos, mas o comando git branch facilita o gerenciamento de tudo isso. Com diferentes parâmetros, é possível listar, criar ou apagar os branches.
+            <p>É comum na maior parte do tempo possuir múltiplas variações em seu repositório Git, chamadas de branches
+                (“ramificações”). A grosso modo, um branch é um caminho independente de desenvolvimento, uma
+                alternativa. A princípio pode parecer fácil
+                se perder em diversos caminhos, mas o comando git branch facilita o gerenciamento de tudo isso. Com
+                diferentes parâmetros, é possível listar, criar ou apagar os branches.
             </p>
             <h3 class="let">Exemplo:</h3>
             <h2>$ git branch - (lista todas as ramificações) - $ git branch
                 <nome_do_branch> - (cria um branch com o nome especificado) - $ git branch -d
-                    <nome_do_branch> - (deleta o branch com o nome especificado)</h2>
+                    <nome_do_branch> - (deleta o branch com o nome especificado)
+            </h2>
             <div ">
             <h1>MATERIAL DE APOIO</h1>
             <url>https://youtu.be/UbJLOn1PAKw</url>
@@ -94,11 +124,11 @@
             <p>https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Uma-Breve-Hist%C3%B3ria-do-Git - história git</p>
         </div>
     </div>
-    <footer class="footer ">
-        <div class="fi " >
+    <footer class=" footer ">
+        <div class=" fi " >
             <a>GitHub:</a>
         <url>adriellyEster</url></div>
-        <div class="fi2 ">
+        <div class=" fi2 ">
             <a>Email:</a>
         <url>adriellyester9@gmail.com</url>
         </div>
