@@ -23,7 +23,7 @@ body {
 }
 .nav a {
     text-decoration: none;
-    color: #363636;
+    color: #fff;
     padding-right: 1rem;
     font-size: 1.5rem;
     transition: .5s;
