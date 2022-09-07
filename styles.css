@@ -53,6 +53,8 @@ body {
 .example {
     padding-left: 1rem;
     margin-bottom: 1rem;
+    background-color: #ababab;
+    border-radius: 4px;
 }
 
 .let {
